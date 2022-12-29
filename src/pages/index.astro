@@ -7,11 +7,13 @@ import Main from "../layouts/Main.astro";
   <h1 class="text-7xl font-extrabold text-amber-400 drop-shadow-lg p-4">
     Wellcome
   </h1>
-  <h1 class="mb-2 text-4xl p-2 font-sans text-black dark:text-white">
+  <h1
+    class="mb-2 md:text-4xl text-2xl p-2 font-sans text-black dark:text-white"
+  >
     Hi, My name is<br class="block md:hidden" />
-    <span class="relative">
+    <span class="relative text-center">
       <span
-        class="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent text-pink-400 dark:text-pink-300"
+        class="h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent text-pink-400 dark:text-pink-300 text-center"
       >
         Fenny <span class="text-3xl">👋</span>
       </span>
@@ -20,5 +22,5 @@ import Main from "../layouts/Main.astro";
       ></span>
     </span>
   </h1>
-  <a href="/resume.pdf"><Button text="Hire Me !" color="text-pink-300" /></a>
+  <a href="/resume.pdf"><Button text="My Resume !" color="text-pink-300" /></a>
 </Main>

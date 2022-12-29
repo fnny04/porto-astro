@@ -9,7 +9,7 @@ export default function Navbar() {
           Fenny | Personal Website
         </figcaption>
       </figure>
-      <nav className="flex gap-4  text-gray-600 dark:text-gray-200 items-center">
+      <nav className="md:flex hidden gap-4  text-gray-600 dark:text-gray-200 items-center">
         <a
           className="hover:text-pink-400 hover:border-b-2 hover:border-pink-400 "
           href="/"
@@ -20,7 +20,7 @@ export default function Navbar() {
           About
         </a>
         <a className="hover:text-pink-400  " href="/contact">
-          Contact
+          Project
         </a>
       </nav>
       <ThemeToggle />
