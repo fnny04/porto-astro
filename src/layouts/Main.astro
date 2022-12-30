@@ -1,6 +1,5 @@
 ---
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer.astro";
 
 const { title, isCenter } = Astro.props;
 ---
@@ -15,6 +14,7 @@ const { title, isCenter } = Astro.props;
   </head>
   <body class="overflow-hidden">
     <Navbar client:load />
+
     <main
       class={`flex ${
         isCenter
@@ -23,9 +23,6 @@ const { title, isCenter } = Astro.props;
       } bg-gray-300 dark:bg-gray-600 h-screen w-full flex`}
     >
       <slot />
-      <!-- <section class="flex flex-col h-full items-center justify-center">
-        <Footer />
-      </section> -->
     </main>
   </body>
 </html>
