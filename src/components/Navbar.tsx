@@ -1,6 +1,6 @@
 import ThemeToggle from "./ThemeToogle";
 import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu } from "react-icons/rx/index.js";
 
 export default function Navbar() {
   const [hamburgerOpen, sethamburgerOpen] = useState(false);
