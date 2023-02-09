@@ -1,11 +1,51 @@
 ---
 import Main from "../layouts/Main.astro";
 import { FaGithub } from "react-icons/fa/index.js";
+import project from "../assets/Apotekqyu.png";
+import gallery from "../assets/gallery.png";
+import web from "../assets/Webapp.png";
 ---
 
-<Main isCenter title="About">
+<Main isCenter title="Project">
+  <div class="grid grid-cols-3 gap-4 p-4">
+    <div class="flex flex-col w-auto bg-white rounded-md p-4">
+      <h1 class="px-32 m-4">Apotekqyu</h1>
+      <img src={project} width="400" alt="" />
+      <a href="https://apotekqyu.netlify.app"
+        ><h1 class="text-blue-400 items-center justify-center py-2">
+          https://apotekqyu.netlify.app
+        </h1>
+        <h1 class="text-blue-400 items-center justify-center">
+          https://github.com/fnny04/apotek-qyu
+        </h1>
+      </a>
+    </div>
+    <div class="p-4 h-auto w-auto bg-white rounded-md my-4">
+      <img src={gallery} width="1000" alt="" />
+      <a href="https://apotekqyu.netlify.app"
+        ><h1 class="text-blue-400 items-center justify-center py-2">
+          https://gallery-app-rg.netlify.app/
+        </h1>
+        <h1 class="text-blue-400 items-center justify-center">
+          https://github.com/fnny04/gallery-web-app
+        </h1>
+      </a>
+    </div>
+    <div class="p-4 h-auto w-auto bg-white rounded-md my-4">
+      <h1 class="px-28 m-4">Kumpulan App</h1>
+      <img src={web} width="1000" alt="" />
+      <a href="https://apotekqyu.netlify.app"
+        ><h1 class="text-blue-400 items-center justify-center py-2">
+          https://simple-funny-webapp.netlify.app/
+        </h1>
+        <h1 class="text-blue-400 items-center justify-center">
+          https://github.com/fnny04/Simply-Webapp-Funny
+        </h1>
+      </a>
+    </div>
+  </div>
   <a href="https://github.com/fnny04?tab=repositories">
-    <FaGithub className="text-9xl dark:text-white" />
+    <FaGithub className="text-6xl dark:text-white" />
   </a>
-  <h1 class="p-4 dark:text-white">Open My Repository</h1>
+  <h1 class="py-4 dark:text-white">Open My Repository</h1>
 </Main>
