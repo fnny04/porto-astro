@@ -1,51 +1,22 @@
 ---
-import Main from "../layouts/Main.astro";
+import Navbar from "../components/Navbar";
 import { FaGithub } from "react-icons/fa/index.js";
-import project from "../assets/Apotekqyu.png";
-import gallery from "../assets/gallery.png";
-import web from "../assets/Webapp.png";
+import Project from "../components/Project";
 ---
 
-<Main isCenter title="Project">
-  <div class="grid grid-cols-3 gap-4 p-4">
-    <div class="flex flex-col w-auto bg-white rounded-md p-4">
-      <h1 class="px-32 m-4">Apotekqyu</h1>
-      <img src={project} width="400" alt="" />
-      <a href="https://apotekqyu.netlify.app"
-        ><h1 class="text-blue-400 items-center justify-center py-2">
-          https://apotekqyu.netlify.app
-        </h1>
-        <h1 class="text-blue-400 items-center justify-center">
-          https://github.com/fnny04/apotek-qyu
-        </h1>
-      </a>
-    </div>
-    <div class="p-4 h-auto w-auto bg-white rounded-md my-4">
-      <img src={gallery} width="1000" alt="" />
-      <a href="https://apotekqyu.netlify.app"
-        ><h1 class="text-blue-400 items-center justify-center py-2">
-          https://gallery-app-rg.netlify.app/
-        </h1>
-        <h1 class="text-blue-400 items-center justify-center">
-          https://github.com/fnny04/gallery-web-app
-        </h1>
-      </a>
-    </div>
-    <div class="p-4 h-auto w-auto bg-white rounded-md my-4">
-      <h1 class="px-28 m-4">Kumpulan App</h1>
-      <img src={web} width="1000" alt="" />
-      <a href="https://apotekqyu.netlify.app"
-        ><h1 class="text-blue-400 items-center justify-center py-2">
-          https://simple-funny-webapp.netlify.app/
-        </h1>
-        <h1 class="text-blue-400 items-center justify-center">
-          https://github.com/fnny04/Simply-Webapp-Funny
-        </h1>
-      </a>
-    </div>
-  </div>
+<Navbar client:load />
+<div
+  class="w-screen h-100% bg-cyan-200 dark:bg-gray-600 flex flex-col justify-center items-center"
+>
+  <h1
+    class="text-2xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 to-orange-400 dark:bg-gradient-to-br from-pink-600 to-cyan-500 drop-shadow-lg p-4"
+  >
+    Deployment Project
+  </h1>
+  <Project />
+
   <a href="https://github.com/fnny04?tab=repositories">
-    <FaGithub className="text-6xl dark:text-white" />
+    <FaGithub className="text-8xl dark:text-white" />
   </a>
-  <h1 class="py-4 dark:text-white">Open My Repository</h1>
-</Main>
+  <h1 class="py-4 dark:text-white">Others Check My Repository</h1>
+</div>
