@@ -12,12 +12,10 @@ export default function Project() {
           <img src={project} alt="" />
         </a>
         <a href="https://apotekqyu.netlify.app/">
-          <h1 className="ml-14 my-4 text-gray-600">
-            https://apotekqyu.netlify.app/
-          </h1>
+          <h1 className="my-4 text-gray-600">https://apotekqyu.netlify.app/</h1>
         </a>
         <a href="https://github.com/fnny04/apotek-qyu">
-          <h1 className="ml-14 my-4 text-gray-600">
+          <h1 className="my-4 text-gray-600">
             https://github.com/fnny04/apotek-qyu
           </h1>
         </a>
@@ -25,12 +23,10 @@ export default function Project() {
       <div className="p-4 bg-white rounded-md">
         <a href="https://vegetamart.netlify.app/">
           <img src={market} alt="" />
-          <h1 className="ml-14 m-4 text-gray-600">
-            https://vegetamart.netlify.app/
-          </h1>
+          <h1 className="m-4 text-gray-600">https://vegetamart.netlify.app/</h1>
         </a>
         <a href="https://github.com/fnny04/shopping-react">
-          <h1 className="ml-14 my-4 text-gray-600">
+          <h1 className="my-4 mx-4 text-gray-600">
             https://github.com/fnny04/shopping-react
           </h1>
         </a>
@@ -40,12 +36,12 @@ export default function Project() {
           <img src={web} alt="" />
         </a>
         <a href="https://simple-funny-webapp.netlify.app//">
-          <h1 className="ml-14 my-4 text-gray-600">
+          <h1 className="my-4 text-gray-600">
             https://simple-funny-webapp.netlify.app/
           </h1>
         </a>
         <a href="https://github.com/fnny04/Simply-Webapp-Funny">
-          <h1 className="ml-14 my-4 text-gray-600">
+          <h1 className="my-4 text-gray-600">
             https://github.com/fnny04/Simply-Webapp-Funny
           </h1>
         </a>
@@ -63,12 +59,10 @@ export default function Project() {
           <img src={votsu} alt="" />
         </a>
         <a href="https://votsu.netlify.app//">
-          <h1 className="ml-14 my-4 text-gray-600">
-            https://votsu.netlify.app/
-          </h1>
+          <h1 className="my-4 text-gray-600">https://votsu.netlify.app/</h1>
         </a>
         <a href="https://github.com/psudevteam/votsu-fe">
-          <h1 className="ml-14 my-4 text-gray-600">
+          <h1 className="my-4 text-gray-600">
             https://github.com/psudevteam/votsu-fe
           </h1>
         </a>

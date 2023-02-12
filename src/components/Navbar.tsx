@@ -10,14 +10,14 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="flex fixed top-0 relative items-center w-full h-auto bg-blue-400 dark:bg-gray-700 justify-between p-4 text-white font-bold">
+      <header className="flex absolute top-100 relative items-center w-full h-auto bg-blue-400 dark:bg-gray-700 justify-between p-2 text-white font-bold">
         <RxHamburgerMenu
           onClick={toggleHamburger}
           className="md:hidden text-3xl cursor-pointer"
         />
 
         <figure>
-          <figcaption className="text-cyan-800 dark:text-white ">
+          <figcaption className="text-cyan-800 p-4 dark:text-white ">
             Fenny | Personal Website
           </figcaption>
         </figure>

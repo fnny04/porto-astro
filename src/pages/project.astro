@@ -1,13 +1,10 @@
 ---
-import Navbar from "../components/Navbar";
+import Main from "../layouts/Main.astro";
 import { FaGithub } from "react-icons/fa/index.js";
 import Project from "../components/Project";
 ---
 
-<Navbar client:load />
-<div
-  class="w-auto h-full bg-cyan-200 dark:bg-gray-600 flex flex-col justify-center items-center"
->
+<Main isCenter title="Project">
   <h1
     class="text-2xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 to-orange-300 drop-shadow-lg p-4"
   >
@@ -19,4 +16,4 @@ import Project from "../components/Project";
     <FaGithub className="text-8xl text-gray-600 dark:text-white" />
   </a>
   <h1 class="py-4 text-gray-600 dark:text-white">Check My Repository</h1>
-</div>
+</Main>
